@@ -7,14 +7,17 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #606c71; }
+  color: #606c71; 
+  background: url(pu.jpeg);
+  background-size: cover;}
 
 a {
   color: #1e6bb8;
   text-decoration: none; }
   a:hover {
-    text-decoration: underline; }
-
+    text-decoration: none; }
+a:link{color:white;}
+.myclas2:link{color:black;}
 .btn {
   display: inline-block;
   margin-bottom: 1rem;
@@ -73,7 +76,9 @@ a {
 
 .project-name {
   margin-top: 0;
-  margin-bottom: 0.1rem; }
+  margin-bottom: 0.1rem;
+
+  text-decoration: none; }
 
 @media screen and (min-width: 64em) {
   .project-name {
@@ -88,6 +93,9 @@ a {
     font-size: 1.75rem; } }
 
 .project-tagline {
+  left: 100px;
+  right: 100px;
+  top:100px;
   margin-bottom: 2rem;
   font-weight: normal;
   opacity: 0.7; }
@@ -114,7 +122,9 @@ a {
   font-weight: normal;
   color: #159957; }
 .main-content p {
-  margin-bottom: 1em; }
+	 border: 3px dotted white;
+  margin-bottom: 1em;
+width:250px;  }
 .main-content code {
   padding: 2px 4px;
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
