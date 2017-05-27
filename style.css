@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+body {
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1.0);
+    font-size: 1.4em;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+select {
+    width: 200px;
+    outline: none;
+}
+label {
+    margin-right: 10px;
+}
+/* Main styles */
+
+.container {
+    max-width: 1124px;
+    margin: 0 auto;
+}
+.heading {
+    text-align: center;
+    padding: 30px 0;
+    margin: 0;
+}
+/* Header */
+.header__btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 17px 89px;
+    border: 2px solid #2DA5D8;
+    border-radius: 6px;
+    transition: .4s;
+}
+.header__btn:hover {
+    padding: 17px 100px;
+    background: rgba(45,165,216, .61);
+    transform: translateY(-10px) translateX(-50%);
+}
+.header {
+    height: 100vh;
+    background: url(img/header.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    color: #f3f3f3;
+}
+.text {
+    margin: 0 0 150px 0;
+    text-align: center;
+    letter-spacing: 1.1px;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+.header__heading {
+    margin: 0;
+    font-weight: 100;
+    font-size: 5em;
+    letter-spacing: 14px;
+    margin-top: 150px;
+}
+.gitlab__block {
+    position: absolute;
+    top: -35px;
+    right: -46px;
+    width: 160px;
+    height: 80px;
+    transform: rotate(37deg);
+    background: #dad8d8;
+    transition: background 4s;
+}
+.gitlab__block:hover {
+    background: #bbe0c8;
+}
+.logo {
+    position: absolute;
+    top: 44px;
+    right: 54px;
+}
+/* galery styles */
+
+.galery {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.describe_name{
+    margin: 1px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.describe_text {
+    margin: 5px 1px;
+}
+.galery_item {
+    flex-basis: 250px;
+    padding: 0 0 10px 0;
+    border: 1px solid;
+    margin-bottom: 40px;
+}
+.btn_describe {
+    font-size: 1em;
+    display: block;
+    background: #e4e4e4;
+    border: 1px solid #999;
+    border-radius: 2px;
+    padding: 5px 25px;
+    float: right;
+}
+.galery_item-image {
+    padding: 4px 4px 0 4px;
+}
+.galery_item-image > img {
+    width: 100%;
+}
+.galery_item-describe {
+    padding: 6px 8px 10px 8px;
+}
+.btn-default {
+    font-weight: 800;
+    background: transparent;
+    border: 1px solid #ccc;
+    padding: 10px 30px;
+    border-radius: 4px;
+    transition: all .3s;
+    outline: none;
+} 
+.btn-default:hover {
+    background: #f3f3f3;
+    transform: translateY(5px);
+    outline: none;
+}
+.ajax_btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 40px;
+    margin-bottom: 100px;
+    outline: none;
+} 
+.ajax_btn:focus {
+    outline: none;
+}
+.border {
+list-style: none;
+padding: 0;
+}
+.border li {
+    font-family: "Trebuchet MS", "Lucida Sans";
+    padding: 7px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-left: 10px solid #f05d22; 
+    box-shadow: 2px -2px 5px 0 rgba(0,0,0,.1),
+         -2px -2px 5px 0 rgba(0,0,0,.1),
+        2px 2px 5px 0 rgba(0,0,0,.1),
+        -2px 2px 5px 0 rgba(0,0,0,.1);
+    transition: 0.3s all linear;
+}
+.border li:nth-child(2){border-color: #8bc63e;}
+.border li:nth-child(3){border-color: #fcba30;}
+.border li:nth-child(4){border-color: #1ccfc9;}
+.border li:nth-child(5){border-color: #493224;}
+.border li:hover {border-left: 10px solid transparent;}
+.border li:nth-child(1):hover {border-right: 10px solid #f05d22;}
+.border li:nth-child(2):hover {border-right: 10px solid #8bc63e;}
+.border li:nth-child(3):hover {border-right: 10px solid #fcba30;}
+.border li:nth-child(4):hover {border-right: 10px solid #1ccfc9;}
+.border li:nth-child(5):hover {border-right: 10px solid #493224;}
+/* form style */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.form {
+    margin-top: 50px;
+}
+.input {
+    background: transparent;
+    padding: 4px 50px;
+    margin-top: 10px;
+    border-radius: 7px;
+}
+.pull-right {
+    float: right;
+}
+.pull-left {
+    float: left;
+}
+.form_container {
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 30px;
+    padding: 20px;
+    overflow: hidden;
+}
+.location {
+    display: inline-block;
+    margin-right: 120px;
+    margin-top: 1em;
+    width: 30%;
+}
+.rooms_block,
+.price_block {
+    width: 20%;
+}
+.rooms_block {
+    margin-right: 135px;
+    margin-top: 1em;
+}
+.price_block {
+    margin-top: -8px;
+}
+.rooms_select, .liv_rooms_select {
+    margin-top: 13px;
+}
+.price_heading {
+    text-align: center;
+    margin: 0;
+}
+.price_input_from, .price_input_to {
+    width: 50px;
+    margin-top: 13px;
+}
+.search_block {
+    padding: 10px;
+}
+.mainForm {
+    width: 100%;
+    margin-top: 28px;
+}
+.checkTime {
+    margin-left: 45px;
+    display: inline-block;
+}
+/* Rating style */
+
+.rate {
+    float: left;
+    display: flex;
+}
+
+.rateNotChecked {
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 1;
+    color: #ddd;
+    margin-right: 0px;
+}
+
+.rateNotChecked:before, .rateChecked:before {
+    content: '★';
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 1;
+    margin-right: 2px;
+}
+.rateChecked {
+    color: #2d2d2c;
+    line-height: 1;
+    margin-right: 0px;
+}
+@media only all and (max-width: 550px) {
+    .container {
+        min-width: 335px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .galery_item {
+        flex-basis: 100%;
+    }
+    .location, .rooms_block, .price_block {
+        width: 100%;
+        float: none;
+    }
+    .location, .rooms_block {
+        margin-bottom: 30px;
+        border-bottom: 1px solid;
+        margin-top: 0;
+    }
+    .checkTime {
+        margin-bottom: 10px;
+    }
+    .search_block {
+        width: 100%;
+    }
+}
+@media only all and (max-width: 800px) {
+    
+    .location, .rooms_block, .price_block {
+        width: 100%;
+        float: none;
+    }
+    .location, .rooms_block {
+        margin-bottom: 30px;
+        border-bottom: 1px solid;
+    }
+    .checkTime {
+        margin-bottom: 10px;
+    }
+    .search_block {
+        width: 100%;
+    }
+    .rooms_block, .location {
+        margin-top: 0;
+    }
+}
+
+.noResults {
+    margin: auto;
+}

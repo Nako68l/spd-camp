@@ -1,25 +1,127 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
-    <title>Тая ніоч</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name"><a href=https://vk.com/nako21">Мій сайт</h1>
-      <h2 class="project-tagline"></h2>
-    </section>
+    <title>Name of the site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
 
-    <section class="main-content">
-      <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Еее ну это самое</h3>
+<body>
+    <header class="header">
+        <div class="header__content">
+            <h1 class="header__heading">Spring camp 2017</h1><br>
+            <p class="text">SPD-Ukraine is a leading provider of software development services</p>
+            <a href="#form" class="header__btn">More</a>
+            <div class="gitlab__block">
+                <a href="https://gitlab.com/spd-springcamp-2017/frontend-team1" class="logo">
+                    <svg width="28" height="28" class="tanuki-logo" viewBox="0 0 36 36" class="logo__link">
+                    	<path class="tanuki-shape tanuki-left-ear" fill="#e24329" d="M2 14l9.38 9v-9l-4-12.28c-.205-.632-1.176-.632-1.38 0z"></path>
+                    	<path class="tanuki-shape tanuki-right-ear" fill="#e24329" d="M34 14l-9.38 9v-9l4-12.28c.205-.632 1.176-.632 1.38 0z"></path>
+                    	<path class="tanuki-shape tanuki-nose" fill="#e24329" d="M18,34.38 3,14 33,14 Z"></path>
+                    	<path class="tanuki-shape tanuki-left-eye" fill="#fc6d26" d="M18,34.38 11.38,14 2,14 6,25Z"></path>
+                    	<path class="tanuki-shape tanuki-right-eye" fill="#fc6d26" d="M18,34.38 24.62,14 34,14 30,25Z"></path>
+                    	<path class="tanuki-shape tanuki-left-cheek" fill="#fca326" d="M2 14L.1 20.16c-.18.565 0 1.2.5 1.56l17.42 12.66z"></path>
+                    	<path class="tanuki-shape tanuki-right-cheek" fill="#fca326" d="M34 14l1.9 6.16c.18.565 0 1.2-.5 1.56L18 34.38z"></path>
+					</svg>
+				</a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <!-- Form input -->
+        <section id="form">
+            <form action="" method="post" class="mainForm">
+                <div class="form_container">
+                    <div class="main_form-wrapper">
+                        <div class="location pull-left">
+                            <div class="pull-left">
+                                <p>Country:</p>
+                            </div>
+                            <div class="pull-right">
+                                <select id="countries" name="country" class="input countries"
+                                    placeholder="Choose country" title="Choose country">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="pull-left">
+                                <p>City:</p>
+                            </div>
+                            <div class="pull-right">
+                                <select name="city" class="input city" title="Choose city" 
+                                	placeholder="Choose city" disabled>
+                                	<option value=""></option>
+                                </select>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="pull-left">
+                                <label>Rent type:</label>
+                            </div>
+                            <div class="checkTime">
+                                <input id="Day" type="radio" name="timeSelect">
+                                <label for="Day">Day</label>
+                                <input id="Month" type="radio" name="timeSelect" checked>
+                                <label for="Month">Month</label>
+                            </div>
+                        </div>
+                        <!-- end of location block -->
+                        <div class="rooms_block pull-left">
+                            <div class="pull-left">
+                                <p>Rooms:</p>
+                            </div>
+                            <div class="pull-right">
+                                <input type="number" name="rooms" id="Rooms" class="rooms_select" max="9" value="3" min="1" onkeydown="return false">
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="pull-left">
+                                <p>Living rooms:</p>
+                            </div>
+                            <div class="pull-right">
+                                <input type="number" name="livingRooms" id="living_rooms" class="liv_rooms_select" max="9" value="2" min="1" onkeydown="return false">
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <!-- end of rooms block -->
+                        <div class="price_block pull-left">
+                            <p class="price_heading">Price</p>
+                            <div class="pull-left">
+                                <p>From</p>
+                            </div>
+                            <div class="pull-right">
+                                <input type="text" name="priceMin" id="Rooms" class="price_input_from" placeholder="100">
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="pull-left">
+                                <p>To</p>
+                            </div>
+                            <div class="pull-right">
+                                <input type="text" name="priceMax" id="" class="price_input_to" placeholder="500">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search_block pull-right">
+                        <input type="checkbox" name="new" id="newest" checked>
+                        <label for="newest">Newest at first</label>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- end of container -->
+            </form>
+        </section>
 
-<p>smth <a class="myclas2" href=https://vk.com/feed">вообщем</a> вроді<code>вот</code>єто</p>
-</section>  
-  </body>
+        <!-- Galery -->
+        <section id='galery' class="galery"></section>
+
+        <div id="ajax_btn" class="ajax_btn">
+            <button type="button" class="btn-default">Show more...</button>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
 </html>
